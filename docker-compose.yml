@@ -1,0 +1,14 @@
+service:
+
+    vm-postgres:
+        image: postgres:18
+        restart: always
+        ports:
+         - 5500:5432
+        environment:
+         POSTGRES_PASSWORD: Dev0
+        volumes:
+         - vm-postgres-data:/var/lib/postgresql
+
+volumes:
+    vm-postgres-data:

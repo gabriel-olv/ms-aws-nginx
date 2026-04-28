@@ -1,3 +1,7 @@
 spring:
   application:
     name: user-ms
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost:5432}/${DB_NAME:test}
+    username: ${DB_USER:dev}
+    password: ${DB_PASSWORD:dev0}
