@@ -1,4 +1,4 @@
-service:
+services:
 
     vm-postgres:
         image: postgres:18
